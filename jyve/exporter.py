@@ -5,8 +5,9 @@ import shutil
 import binascii
 import json
 import re
-import notebook
 from shutil import copytree, rmtree, copy2
+
+import notebook
 
 from pathlib import Path
 
