@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JupyterLab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script id="jupyter-config-data" type="application/json">
+{
+  "buildAvailable": "False",
+  "buildCheck": "False",
+  "token": "",
+  "devMode": "False",
+  "terminalsAvailable": "False",
+  "ignorePlugins": "[]",
+  "serverRoot": "~/jyve",
+  "mathjaxConfig": "TeX-AMS-MML_HTMLorMML-full,Safe",
+  "mathjaxUrl": "../static/components/MathJax/MathJax.js",
+  "appName": "JupyterLab Beta",
+  "appNamespace": "jupyterlab",
+  "appSettingsDir": "~/jyve/settings",
+  "appVersion": "0.34.12",
+  "cacheFiles": "True",
+  "pageUrl": "./lab",
+  "publicUrl": "../lab/static/",
+  "schemasDir": "~/jyve/schemas/",
+  "settingsUrl": "../lab/api/settings/",
+  "staticDir": "~/jyve/static",
+  "templatesDir": "~/jyve/templates",
+  "themesDir": "~/jyve/themes/",
+  "themesUrl": "/lab/api/themes/",
+  "treeUrl": "../lab/tree/",
+  "userSettingsDir": "~/jyve/lab/user-settings",
+  "workspacesDir": "~/jyve/lab/workspaces",
+  "workspacesUrl": "../lab/workspaces/",
+  "workspacesApiUrl": "../api/workspaces/",
+  "baseUrl": "../",
+  "wsUrl": "",
+  "jyveOffline": true
+}
+</script>
+
+  
+  <link rel="icon" type="image/x-icon" href="http://localhost:9999/static/base/images/favicon.ico" class="idle favicon">
+  <link rel="" type="image/x-icon" href="http://localhost:9999/static/base/images/favicon-busy-1.ico" class="busy favicon">
+  
+
+</head>
+<body>
+
+<script type="text/javascript">
+  /* Remove token from URL. */
+  (function () {
+    var location = window.location;
+    var search = location.search;
+
+    // If there is no query string, bail.
+    if (search.length <= 1) {
+      return;
+    }
+
+    // Rebuild the query string without the `token`.
+    var query = '?' + search.slice(1).split('&')
+      .filter(function (param) { return param.split('=')[0] !== 'token'; })
+      .join('&');
+
+    // Rebuild the URL with the new query string.
+    var url = location.origin + location.pathname +
+      (query !== '?' ? query : '') + location.hash;
+
+    window.history.replaceState({ }, '', url);
+  })();
+</script>
+
+<script type="text/javascript" src="../lab/static/vendors~main.39e64189910ee47bda27.js"></script><script type="text/javascript" src="../lab/static/main.4778be4971815805330f.js"></script></body>
+</html>
