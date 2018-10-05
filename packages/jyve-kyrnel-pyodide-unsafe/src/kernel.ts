@@ -27,7 +27,8 @@ export class PyodideUnsafeKernel extends JSUnsafeKernel {
   }
 
   async pyodideWindow() {
-    return (await this.iframe()).contentWindow as IPyodideWindow;
+    // return (await this.iframe()).contentWindow as IPyodideWindow;
+    return (window as IPyodideWindow);
   }
 
   async pyodide(): Promise<void> {
