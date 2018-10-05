@@ -169,16 +169,16 @@ export function getPyodide(window: IPyodideWindow, baseURL: string): Promise<any
         window.pyodide.packages = {dependencies: {}};
         fixRecursionLimit(window.pyodide);
         resolve();
-        //
-        // console.log('fetching packages');
-        // fetch(`${baseURL}packages.json`)
-        //   .then((response) => response.json())
-        //   .then((json) => {
-        //     console.log('received json');
-        //     window.pyodide.packages = json;
-        //     fixRecursionLimit(window.pyodide);
-        //     resolve();
-        //   });
+
+        console.log('fetching packages');
+        fetch(`${baseURL}packages.json`)
+          .then((response) => response.json())
+          .then((json) => {
+            console.log('received json');
+            window.pyodide.packages = json;
+            fixRecursionLimit(window.pyodide);
+            resolve();
+          });
       };
     });
 
