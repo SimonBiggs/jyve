@@ -4,7 +4,7 @@
     "url": "https://github.com/deathbeds/jyve/issues"
   },
   "dependencies": {
-    "@jupyterlab/application": "^0.17.0",
+    "@jupyterlab/application": "^0.18.6",
     "raw-loader": "~0.5.1"
   },
   "devDependencies": {
@@ -57,7 +57,7 @@
   "main": "lib/index.js",
   "name": "@deathbeds/jyve-kyrnel-pyodide-unsafe",
   "peerDependencies": {
-    "@deathbeds/jyve": "^0.5.0"
+    "@deathbeds/jyve": "^0.6.0"
   },
   "repository": {
     "type": "git",
@@ -70,5 +70,5 @@
     "watch": "tsc --watch"
   },
   "types": "lib/index.d.ts",
-  "version": "0.4.0"
+  "version": "0.6.0"
 }

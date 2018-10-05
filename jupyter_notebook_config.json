@@ -3,5 +3,11 @@
     "nbserver_extensions": {
       "jyve": true
     }
+  },
+  "MultiKernelManager": {
+    "default_kernel_name": "jyve-kyrnel-brython-unsafe"
+  },
+  "KernelSpecManager": {
+    "ensure_native_kernel": false
   }
 }
