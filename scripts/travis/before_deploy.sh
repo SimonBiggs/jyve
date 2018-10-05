@@ -2,3 +2,4 @@
 set -ex
 
 cp -r .testoutput/* demo/
+cp CNAME demo/CNAME
