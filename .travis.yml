@@ -9,7 +9,7 @@ addons:
 
 branches:
   only:
-    - master
+    - scriptedforms
     - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
 
 env:
@@ -31,4 +31,4 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   on:
-    branch: master
+    branch: scriptedforms
