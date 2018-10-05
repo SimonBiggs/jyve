@@ -292,7 +292,7 @@ class JyveExporter(HTMLExporter):
             rmtree(pyodide_out)
         pyodide_out.mkdir(exist_ok=True, parents=True)
 
-        for pyfile in pyodide_path.glob("pyodide.asm*"):
+        for pyfile in pyodide_path.glob("*.[djw][sa]*"):
             print("WOOOOOO", pyfile)
             copy2(pyfile, pyodide_out / pyfile.name)
 
