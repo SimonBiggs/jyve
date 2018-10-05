@@ -22,7 +22,7 @@ env:
 
 before_install: ./scripts/travis/before_install.sh
 install: ./scripts/travis/install.sh
-script: ./scripts/travis/test.sh
+script: ./scripts/demo.sh
 after_failure: ./scripts/travis/after_failure.sh
 before_deploy: ./scripts/travis/before_deploy.sh
 
